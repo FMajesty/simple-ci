@@ -15,8 +15,8 @@ help:
 # ========
 
 run:
-	$(py) -m uvicorn server:app
+	$(py) -m uvicorn server:app --port 1337
 
 run-reload:
-	$(py) -m uvicorn server:app --reload
+	$(py) -m uvicorn server:app --port 1337 --reload
 
