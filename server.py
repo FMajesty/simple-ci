@@ -25,7 +25,7 @@ def validate_ip(addr: str) -> bool:
     for net in github_nets:
         if ip in ip_network(net):
             return True
-    return True
+    return False
 
 
 def execute_script(script_name: str) -> None:
